@@ -1,0 +1,92 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+       
+    <div class="row ">
+        <div class="col-8 offset-2">
+            <br>
+            <h3>Creating a New Listing</h3>
+    <form method="post" action="/listings" novalidate class=" needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title">Title</label>
+            <input type="text" placeholder="enter chachy title" name=listing[title] class="form-control" required>
+            <div class="valid-feedback">
+                The title is perfect!
+              </div>
+              <div class="invalid-feedback">
+                Invalid title!
+              </div>
+        </div>
+        <div class="mb-3">
+            <label for="description">Description</label>
+            <textarea name=listing[description] placeholder="enter description" class="form-control" required></textarea>
+            <div class="valid-feedback">
+                You've entered a valid description.
+              </div>
+              <div class="invalid-feedback">
+                Description must be at least 40 characters long.
+              </div>
+        </div>
+        <!-- <div class="mb-3">
+            <label for="image">Image</label>
+            <input type="text" name=listing[image] placeholder="enter image URL/Link" class="form-control" >
+            <div class="invalid-feedback">
+                Please enter a valid image URL.
+              </div>
+        </div> -->
+        <div class="row">
+        <div class="mb-3 col-md-6"> 
+          <label for="image">Image</label>
+          <input type="file" name=listing[image]  class="form-control" >
+          <div class="invalid-feedback">
+              Please enter a valid image URL.
+            </div>
+      </div>
+        
+      <div class="mb-3 col-md-6" style="margin-top: auto;">
+          <label for="category">category</label>
+          <select name="listing[category]" class="form-control" id="category">
+            <option value="Trending">Trending</option>
+            <option value="Rooms">Rooms</option>
+            <option value="Iconic cities">Iconic cities</option>
+          </select>
+      </div>
+    </div>
+        <div class="row">   
+        <div class="mb-3 col-md-4">
+            <label for="price">Price</label>
+            <input type="number" name=listing[price] placeholder="1200" class="form-control" required>
+            <div class="valid-feedback">
+                You've entered a valid price.
+              </div>
+              <div class="invalid-feedback">
+                Please enter a valid price.
+              </div>
+        </div>
+        <div class="mb-3 col-md-8">
+            <label for="country">Country</label>
+            <input type="text" name=listing[country] placeholder="india" class="form-control" required>
+            <div class="valid-feedback">
+                You've entered a valid country.
+              </div>
+              <div class="invalid-feedback">
+                Please enter a valid country.
+              </div>  
+        </div>
+    </div>
+        <div class="mb-3">
+            <label for="location">Location</label>
+            <input type="text" name=listing[location] placeholder="jaipur,Rajasthan" class="form-control" required>
+            <div class="valid-feedback">
+                You've entered a valid location.
+              </div>
+              <div class="invalid-feedback">
+                Please enter a valid location.
+              </div>
+        </div>
+        <button class="btn btn-dark add-btn mt-3"> Add</button>
+        <br><br>
+    </form>
+</div>
+</div>
+
+</body>
