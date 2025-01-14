@@ -1,0 +1,32 @@
+@media(max-width:480px){
+    .show-heading{
+        margin-left: 1rem;
+    }
+    .show-media-card{
+        margin-left: 1rem;
+        width: -webkit-fill-available;
+    }
+    .media-btns a{
+        margin-left: 1rem;
+        width: 5rem;
+    }
+    .media-review{
+        margin-left: 1rem;
+    }
+    .media-review textarea{
+        width: 20rem;
+    }
+    .media-show-review{
+        margin-left: 1rem;
+    }
+    .media-show-card{
+        width: 100%;
+    }
+    .container-fluid{
+        background-color: white;
+    }
+    .media-search{
+        display: none;
+    }
+    
+}

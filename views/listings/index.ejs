@@ -37,6 +37,9 @@
     #filter-btn{
         display: none;
     }
+    .serach-bar{
+        display: none;
+    }
     @media (max-width:767px){
         #filter-btn{
             display: block;
@@ -67,8 +70,22 @@
             background-color: white;
         }
     }
+    @media (max-width:480px){
+        .serach-bar{
+            display: inline;
+        }
+        .serach-bar form{
+            margin-top: 1rem;
+        }
+    }
 </style>
 <body>
+    <div class="serach-bar">
+        <form class="d-flex" role="search" method="POST" action="/listings/search">
+            <input class="form-control me-2 search-input" name="search" type="search" placeholder="Search destination" aria-label="Search">
+            <button class="btn search-btn" type="submit" ><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+          </form>
+    </div>
     <button type="button" class="btn btn-primary" id="filter-btn">Filter</button>
     <div id="filters" class="filters">
         <a href="/listings/Trending/filters">

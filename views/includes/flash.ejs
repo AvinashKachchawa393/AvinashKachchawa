@@ -1,5 +1,16 @@
+<style>
+  @media (max-width:480px){
+    .media-success{
+      margin-left: 1rem;
+    margin-top: 8px;
+    margin-right: 1rem;
+    width: 90%;
+    }
+  }
+
+</style>
 <%if(success && success.length){%>
-<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3 media-success" role="alert">
     <%= success  %>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
