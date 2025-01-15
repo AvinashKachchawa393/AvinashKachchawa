@@ -28,5 +28,26 @@
     .media-search{
         display: none;
     }
-    
+    /* media qury for login page */
+    .media-login-head{
+        margin-left: 5rem;
+    }
+    .media-login{
+        margin-left: 5rem;
+        width: 65%;
+    }
+    /* media query for signup page */
+    .media-signup-head{
+        width: auto;
+        margin-left:3rem ;
+    }
+    .media-signup{
+        width: 70%;
+        margin-left: 3rem;
+    }
+    /* media edit page */
+    .media-edit{
+        width: 80%;
+        margin-left: 3rem;
+    }
 }

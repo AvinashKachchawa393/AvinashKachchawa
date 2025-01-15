@@ -94,3 +94,10 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+.f-info-socials i{
+    text-decoration: none;
+    color: initial;
+}
+.f-info-socials i:hover{
+    font-size: 1.6rem;
+}
